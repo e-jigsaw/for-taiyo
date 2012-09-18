@@ -1,0 +1,100 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "configure here", :name => "description"}/
+    %meta{:content => "configure here", :name => "keywords"}/
+    %meta{:content => "configure here", :name => "author"}/
+    %meta{:content => "configure here", :name => "copyright"}/
+    %title prototype 2
+    %link{:href => "stylesheets/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/bootstrap-responsive.min.css", :rel => "stylesheet", :type => "text/css"}
+      %link{:href => "stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}
+        %script{:src => "javascripts/bootstrap.min.js", :type => "text/javascript"}
+  %body
+    / navigation bar
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{:href => "#"} Prototype
+          .nav-collapse
+            %ul.nav
+              %li
+                %a{:href => "#"} hoge
+              %li
+                %a{:href => "#"} fuga
+            %ul.nav.pull-right
+              %li
+                %a{:href => "#"} login
+    / navigation bar
+    / main container
+    #mainContainer.container-fluid
+      / breadcrumb
+      %ul.breadcrumb
+        %li
+          %a{:href => "#"} hoge
+          %span.divider |
+        %li
+          %a{:href => "#"} fuga
+          %span.divider |
+        %li
+          %a{:href => "#"} piyo
+      / breadcrumb
+      / all cources
+      .row-fluid
+        .span11.offset1
+          %h1 All cources
+          %h3 Step1
+          .row-fluid
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+          %hr/
+          %h3 Step2
+          .row-fluid
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+          %hr/
+          %h3 Step3
+          .row-fluid
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+            .span3
+              %h5 Some lesson
+              %p Description
+          %hr/
+      / all cources
+      / footer
+      %footer.container-fluid
+        .row-fluid
+          .span3
+            %h5 About this prototype
+            %p Write it
+          .span3
+            %h5 Some infomation
+            %p Write it
+          .span3
+            %h5 Sitemap
+            %p Write it
+          .span3
+            %h5 Contact us
+            %p Write it
+      / footer
+    / main container
