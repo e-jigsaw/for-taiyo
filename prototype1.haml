@@ -1,0 +1,87 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "configure here", :name => "description"}/
+    %meta{:content => "configure here", :name => "keywords"}/
+    %meta{:content => "configure here", :name => "author"}/
+    %meta{:content => "configure here", :name => "copyright"}/
+    %title prototype 1
+    %link{:href => "stylesheets/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/bootstrap-responsive.min.css", :rel => "stylesheet", :type => "text/css"}
+      %link{:href => "stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}
+        %script{:src => "javascripts/bootstrap.min.js", :type => "text/javascript"}
+  %body
+    / navigation bar
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{:href => "#"} Prototype
+          .nav-collapse
+            %ul.nav
+              %li
+                %a{:href => "#"} hoge
+              %li
+                %a{:href => "#"} fuga
+            %ul.nav.pull-right
+              %li
+                %a{:href => "#"} login
+    / navigation bar
+    / main container
+    #mainContainer.container-fluid
+      / breadcrumb
+      %ul.breadcrumb
+        %li
+          %a{:href => "#"} hoge
+          %span.divider |
+        %li
+          %a{:href => "#"} fuga
+          %span.divider |
+        %li
+          %a{:href => "#"} piyo
+      / breadcrumb
+      .row-fluid
+        / main coulm
+        .span8
+          %h1 Some cource
+          %p Description this cource
+          %div{:style => "width: 634px; height: 466px; background-color: #AAA;"} Slide here
+        / main coulm
+        / sidebar coulm
+        .span4
+          %h2 About cource
+          %p Description this cource
+          %hr/
+          %h4 All cource
+          %ul
+            %li
+              %a{:href => "#"} #1
+            %li
+              %a{:href => "#"} #2
+            %li
+              %a{:href => "#"} #3
+          %hr/
+          %h4 Tag cloud
+          %a{:href => "#"} Tag1
+          %a{:href => "#"} Tag2
+          %hr/
+          %h4 Share this cource
+          %p Add social button here
+        / sidebar coulm
+      / footer
+      %footer.container
+        .row
+          .span3
+            %h5 About this prototype
+            %p Write it
+          .span3
+            %h5 Some infomation
+            %p Write it
+          .span3
+            %h5 Sitemap
+            %p Write it
+          .span3
+            %h5 Contact us
+            %p Write it
+      / footer
+    / main container
